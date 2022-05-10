@@ -218,6 +218,8 @@ void G29ForceFeedback::initDevice() {
     unsigned char ff_bits[1+FF_MAX/8/sizeof(unsigned char)];
     struct input_event event;
     struct input_absinfo abs_info;
+    
+    std::cout << "Opening device : "<< m_device_name << std::endl;
 
     m_device_handle = open(m_device_name.c_str(), O_RDWR|O_NONBLOCK);
     if (m_device_handle < 0) {
