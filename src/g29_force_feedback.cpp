@@ -7,7 +7,6 @@
 #include <math.h>
 
 #include "ros_g29_force_feedback/msg/force_feedback.hpp"
-// #include "ros_g29_force_feedback/msg/force_feedback.hpp"
 
 class G29ForceFeedback : public rclcpp::Node {
 
